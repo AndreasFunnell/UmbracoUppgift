@@ -1,0 +1,73 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "mainLayout.cshtml";
+    var navigationImage = Model?.Value<IPublishedContent>("navigationImage")?.Url() ?? "";
+    var contactBackgroundImage = Model?.Value<IPublishedContent>("contactBackgroundImage")?.Url() ?? "";
+    var contactImage = Model?.Value<IPublishedContent>("contactImage")?.Url() ?? "";
+}
+
+<section class="contact-navigation">
+        <div class="wrapper bg-gray">
+            <img class="background-image" src="@navigationImage">
+            <div class="container">
+                <div class="grid-item">
+                    <h2>@Model?.Value("navigationTitle")</h2>
+                </div>
+                <div class="grid-item breadcrumbs">
+                    <a href="/home.html"><h5>Home</h5></a>
+                    <div class="separator">></div>
+                    <a href="/about.html"><h5>Contact</h5></a>
+                </div>
+            </div>
+        </div>
+</section>
+    
+<section class="contact-section">
+    <div class="wrapper">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="background-image" src="@contactBackgroundImage">
+                <img class="glassesguy" src="@contactImage" alt="Glasses Guy Image">
+            </div>
+            <div class="grid-item">
+                <h2>Let us know about your next project</h2>
+                
+                <div class="icon-text">
+                    <i class="fa-light fa-location-dot"></i>
+                    <h5>Office location</h5>
+                </div>
+                <p>Klarabergsviadukten 90, 111 52 Stockholm</p>
+                
+                <div class="icon-text">
+                    <i class="fa-light fa-phone"></i>
+                    <h5>Phone number</h5>
+                </div>
+                <p>+46 8 123 456 75</p>
+
+                <div class="icon-text">
+                    <i class="fa-light fa-envelope"></i>
+                    <h5>E-mail address</h5>
+                </div>
+                <p>sales@onatrix.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <img class="map-image" src="Images/ContactMapImage.svg">
+</section>
+
+<section class="logo-section">
+    <div class="wrapper">
+        <div class="container">
+            <img class ="logo-image" src="Images/FreedomLogo.svg" alt="">
+            <img class ="logo-image" src="Images/IdentityLogo.svg" alt="">
+            <img class ="logo-image" src="Images/NaturalLogo.svg" alt="">
+            <img class ="logo-image" src="Images/SimpleafLogo.svg" alt="">
+            <img class ="logo-image" src="Images/GlobeLogo.svg" alt="">
+            <img class ="logo-image" src="Images/FossilLogo.svg" alt="">
+        </div>
+    </div>
+</section>

@@ -3,6 +3,8 @@
 @{
 	Layout = null;
     var PageTitle = !string.IsNullOrEmpty(ViewBag.Title) ? $"{ViewBag.Title} | Onatrix - Financial Solutions for Your Business" : "Onatrix - Financial Solutions for Your Business";
+
+    var logoImage = Model?.Value<IPublishedContent>("LogoImage")?.Url() ?? "";
 }
 <!DOCTYPE html>
 <html lang="sv-se">
@@ -57,7 +59,7 @@
                         <a href="/projects-page/"><h5>Projects</h5></a>
                     </div>
                     <div class="grid-item bg-light">
-                        <a href="/contact-page/"><h5>Contact</h5></a>
+                        <a href="/onatrix-contact-page/"><h5>Contact</h5></a>
                     </div>
                     <div class="grid-item">
                         <i class="fa fa-search search-icon"></i>
