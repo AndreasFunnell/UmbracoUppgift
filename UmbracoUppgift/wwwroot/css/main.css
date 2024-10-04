@@ -249,13 +249,16 @@ h6 {
 .about-section .wrapper .grid-container .content-column {
   margin-top: 100px;
 }
+.about-section .wrapper .grid-container .content-column .quote {
+  font-style: italic;
+}
 .about-section .wrapper .grid-container .form-column {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  box-shadow: 0px 4px 8px rgba(71, 71, 71, 0.3); /* Add this line for shadow */
+  box-shadow: 0px 4px 8px rgba(71, 71, 71, 0.3);
 }
 .about-section .wrapper .grid-container .form-column .form-header {
   display: flex;
@@ -269,7 +272,7 @@ h6 {
   flex-direction: column;
   margin-bottom: -10px;
 }
-.about-section .wrapper .grid-container .form-column form .form-row input {
+.about-section .wrapper .grid-container .form-column form .form-row input, .about-section .wrapper .grid-container .form-column form .form-row select {
   padding: 8px;
   font-size: 1rem;
 }
@@ -473,25 +476,13 @@ h6 {
   grid-gap: 40px;
   width: 70%;
 }
+.ceo-section .wrapper .grid-container .grid-item p {
+  line-height: 3;
+}
 .ceo-section .wrapper .grid-container .grid-item img {
   margin-bottom: 10px;
 }
 
-.expert-section .wrapper {
-  border: 2px solid red;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding-top: 50px;
-}
-.expert-section .wrapper .grid-container {
-  border: 2px solid blue;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  width: 70%;
-}
 .review-section .wrapper {
   display: flex;
   margin: auto;
@@ -645,4 +636,74 @@ h6 {
 .contact-navigation .wrapper .container .breadcrumbs div.separator {
   color: black;
   margin-bottom: 5px;
+}
+
+.team-section {
+  padding-top: 100px;
+}
+.team-section .wrapper {
+  width: 100%;
+}
+.team-section .wrapper .container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.team-section .wrapper .container h6 {
+  text-align: center;
+}
+.team-section .wrapper .container h2 {
+  text-align: center;
+  margin-top: -20px;
+}
+.team-section .wrapper .container .flex-container-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.team-section .wrapper .container .flex-container-3 .card {
+  flex: 1;
+  max-width: 400px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.team-section .wrapper .container .flex-container-3 .card img {
+  width: 100%;
+  height: auto;
+}
+.team-section .wrapper .container .flex-container-3 .card h5 {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.team-section .wrapper .container .flex-container-3 .card p {
+  margin-left: 15px;
+  margin-top: -5px;
+}
+.team-section .wrapper .container .flex-container-4 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.team-section .wrapper .container .flex-container-4 .card {
+  flex: 1;
+  max-width: 400px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.team-section .wrapper .container .flex-container-4 .card img {
+  width: 100%;
+  height: auto;
+}
+.team-section .wrapper .container .flex-container-4 .card h5 {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.team-section .wrapper .container .flex-container-4 .card p {
+  margin-left: 15px;
+  margin-top: -5px;
 }

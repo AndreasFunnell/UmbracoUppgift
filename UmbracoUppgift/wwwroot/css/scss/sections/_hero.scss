@@ -1,22 +1,22 @@
 .hero-section {
     z-index: 0;
 
-    .wrapper {
-
-        .background-image {
+    .wrapper { 
+        
+        .background-image{
             position: absolute;
             z-index: -1;
             width: 100%;
         }
-
+    
         .container {
             // border: 1px solid blue;
             padding-top: 80px;
             padding-bottom: 50px;
-
+            
             .hero-content {
                 width: 50%;
-
+    
                 p {
                     padding-bottom: 3em;
                 }

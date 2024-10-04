@@ -256,7 +256,7 @@ a:hover, a:focus, a:active {
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--color-secondary);
+  color: var(--color-accent);
   border-color: var(--color-primary);
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
