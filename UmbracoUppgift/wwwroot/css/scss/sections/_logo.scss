@@ -1,0 +1,16 @@
+.logo-section {
+
+    .wrapper {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        .container {
+            padding: 75px;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        }
+    }
+}

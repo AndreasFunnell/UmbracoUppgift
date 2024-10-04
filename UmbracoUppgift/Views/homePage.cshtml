@@ -1,0 +1,204 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+    Layout = "mainLayout.cshtml";
+    ViewBag.Title = Model?.Value("pageTitle")?.ToString() ?? null;
+    
+    var backgroundImage = Model?.Value<IPublishedContent>("heroBackgroundImage")?.Url() ?? "";
+    var signatureImage = Model?.Value<IPublishedContent>("aboutSignatureImage")?.Url() ?? "";
+    var riskImage = Model?.Value<IPublishedContent>("serviceRiskImage")?.Url() ?? "";
+    var bondsImage = Model?.Value<IPublishedContent>("serviceBondsImage")?.Url() ?? "";
+    var assuranceImage = Model?.Value<IPublishedContent>("serviceAssuranceImage")?.Url() ?? "";
+    var taxImage = Model?.Value<IPublishedContent>("serviceTaxImage")?.Url() ?? "";
+    var advisorImage = Model?.Value<IPublishedContent>("serviceAdvisorImage")?.Url() ?? "";
+    var statisticImage = Model?.Value<IPublishedContent>("serviceStatisticImage")?.Url() ?? "";
+    var clientImage = Model?.Value<IPublishedContent>("ClientImage")?.Url() ?? "";
+    var storybackgroundImage = Model?.Value<IPublishedContent>("StoryBackgroundImage")?.Url() ?? "";
+    var videoImage = Model?.Value<IPublishedContent>("StoryVideoImage")?.Url() ?? "";
+    var reportImage = Model?.Value<IPublishedContent>("projectReportImage")?.Url() ?? "";
+    var businessImage = Model?.Value<IPublishedContent>("projectBusinessImage")?.Url() ?? "";
+    var financialImage = Model?.Value<IPublishedContent>("projectAdvisorImage")?.Url() ?? "";
+    var budgetImage = Model?.Value<IPublishedContent>("projectBudgetImage")?.Url() ?? "";
+}
+
+<section class="hero-section">
+    <div class="wrapper">
+        <img class="background-image" src="@backgroundImage" alt="">
+        <div class="container">
+            <div class="hero-content">
+                <h1>We bring success to you</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugit nulla perspiciatis consectetur distinctio nisi, laboriosam doloribus, fuga est neque culpa architecto numquam enim placeat autem.</p>
+                <a class="btn-primary" href='@Model?.Value("heroButtonUrl")'>@Model?.Value("heroButtonText")</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="wrapper">
+        <div class="grid-container">
+            <div class="content-column">
+                <h6>@Model.Value("aboutSectionTitle")</h6>
+                <h2>@Model.Value("aboutHeadline")</h2>
+                <p>@Model.Value("aboutQuote")</p>
+                <p>@Model.Value("aboutText")</p>
+                <img src="@signatureImage" alt="">
+                <p>@Model.Value("aboutSignature")</p>
+            </div>
+            <div class="form-column">
+                <form>
+                <div class="form-header bg-primary">
+                    <h3>@Model.Value("formHeadline")</h3>
+                </div>
+                <p>@Model.Value("formText")</p>
+                <div class="form-row">
+                    <input type="text" id="input1" placeholder="Name">
+                </div>
+                <div class="form-row">
+                    <input type="text" id="input2" placeholder="Email Address">
+                </div>
+                <div class="form-row">
+                    <input type="text" id="input3" placeholder="Phone">
+                </div>
+                <div class="form-row">
+                    <select id="input4">
+                        <option value="">Select a Service</option>
+                        <option value="">Risk Management</option>
+                        <option value="">Bonds & Commodities</option>
+                        <option value="">Assurance & Audits</option>
+                        <option value="">Tax and Trusts</option>
+                        <option value="">Financial Advisor</option>
+                        <option value="">Statistic Advisors</option>
+                    </select>
+                </div>
+                </form>
+                <a class="btn-accent">Submit</a>
+            </div>
+        </div>    
+    </div>         
+</section>
+
+<section class="service-section bg-gray">
+        <div class="wrapper">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>@Model.Value("serviceSectionTitle")</h3>
+                    <h2>@Model.Value("serviceHeadline")</h2>
+                </div>
+                <div class="grid-item bg-light">
+                    <h4>@Model.Value("serviceRiskHeadline")</h4>
+                    <img src="@riskImage" alt="">
+                    <p>@Model.Value("serviceText")</p>
+                </div>
+                <div class="grid-item bg-light">
+                    <h4>@Model.Value("serviceBondsHeadline")</h4>
+                    <img src="@bondsImage" alt="">
+                    <p>@Model.Value("serviceText")</p>
+                </div>
+                <div class="grid-item bg-light">
+                    <h4>@Model.Value("serviceAssuranceHeadline")</h4>
+                    <img src="@assuranceImage" alt="">
+                    <p>@Model.Value("serviceText")</p>
+                </div>
+                <div class="grid-item bg-light">
+                    <h4>@Model.Value("serviceTaxHeadline")</h4>
+                    <img src="@taxImage" alt="">
+                    <p>@Model.Value("serviceText")</p>
+                </div>
+                <div class="grid-item bg-light">
+                    <h4>@Model.Value("serviceAdvisorHeadline")</h4>
+                    <img src="@advisorImage" alt="">
+                    <p>@Model.Value("serviceText")</p>
+                </div>
+                <div class="grid-item bg-light">
+                    <h4>@Model.Value("serviceStatisticHeadline")</h4>
+                    <img src="@statisticImage" alt="">
+                    <p>@Model.Value("serviceText")</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client-section">
+        <div class="wrapper">
+            <div class="container">
+                <div class="client-content">
+                    <h2>@Model.Value("clientSectionTitle")</h2>
+                    <h3>@Model.Value("clientHeadline")</h3>
+                    <p>@Model.Value("clientText")</p>
+                    <a class="btn-primary" href="/Contact">Read our story</a>
+                    <img src="@clientImage" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <div class="wrapper bg-primary">
+            <img class ="background-image" src="@storybackgroundImage" alt="">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h6>@Model.Value("storySectionTitle")</h6>
+                    <h4>@Model.Value("storyHeadline")</h4>
+                </div>
+                <div class="grid-item">
+                    <h3>@Model.Value("storyItem1Headline")</h3>
+                    <p>@Model.Value("storyItem1Text")</p>
+                </div>
+                <div class="grid-item">
+                    <h3>@Model.Value("storyItem2Headline")</h3>
+                    <p>@Model.Value("storyItem2Text")</p>
+                </div>
+                <div class="grid-item">
+                    <h3>@Model.Value("storyItem3Headline")</h3>
+                    <p>@Model.Value("storyItem3Text")</p>
+                </div>
+                <div class="grid-item">
+                    <img class="video-image" src="@videoImage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section"></div>
+        <div class="wrapper">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h6>@Model.Value("projectSectionTitle")</h6>
+                    <h2>@Model.Value("projectHeadline")</h2>
+                </div>
+                <div class="grid-item">
+                    <img class ="background-image" src="@reportImage" alt="">
+                </div>
+                <div class="grid-item">
+                    <img class ="background-image" src="@businessImage" alt="">
+                </div>
+                <div class="grid-item">
+                    <img class ="background-image" src="@financialImage" alt="">
+                </div>
+                <div class="grid-item">
+                    <img class ="background-image" src="@budgetImage" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="logo-section">
+        <div class="wrapper">
+            <div class="container">
+                <img class ="logo-image" src="Images/FreedomLogo.svg" alt="">
+                <img class ="logo-image" src="Images/IdentityLogo.svg" alt="">
+                <img class ="logo-image" src="Images/NaturalLogo.svg" alt="">
+                <img class ="logo-image" src="Images/SimpleafLogo.svg" alt="">
+                <img class ="logo-image" src="Images/GlobeLogo.svg" alt="">
+                <img class ="logo-image" src="Images/FossilLogo.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+

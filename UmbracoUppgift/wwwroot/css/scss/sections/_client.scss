@@ -1,0 +1,27 @@
+.client-section {
+    z-index: 0;
+
+    .wrapper {
+        padding-top: 100px;
+        // border: 2px solid red;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .container {
+            text-align: center;
+            // border: 2px solid blue;
+            width: 70%;
+
+            .btn-primary {
+                margin-bottom: 100px;
+            }
+
+            .img {
+                width: 100%;
+            }
+        }
+    }
+}

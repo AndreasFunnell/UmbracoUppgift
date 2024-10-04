@@ -1,0 +1,24 @@
+.container, .container-fuild {
+    position: relative;
+    width: 70%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    
+    @include tablet {
+        max-width: 720px;
+    }
+    
+    @include desktop {
+        max-width: 1200px;
+    }
+
+
+}
+  
+
+

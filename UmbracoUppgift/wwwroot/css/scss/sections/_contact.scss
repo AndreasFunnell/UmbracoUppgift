@@ -1,0 +1,61 @@
+.contact-section {
+
+    .wrapper {
+        // border: 2px solid red;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 50px;
+
+        .grid-container {
+            // border: 2px solid blue;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 40px;
+            width: 70%;
+
+            .grid-item {
+                // border: 2px solid black;
+                position: relative;
+
+                .background-image {
+                    z-index: 0;
+                    position: absolute;
+                    top: 41px;
+                }
+
+                .glassesguy {
+                    z-index: 1;
+                    position: relative;
+                }
+
+                h2 {
+                    margin-top: 125px;
+                }
+
+                .icon-text {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin-top: 20px;
+
+                    h5 {
+                        margin: 0;
+                    }
+
+                    i {
+                        color: #D9C3A9;
+                    }
+                    
+                }
+
+            }
+
+            .grid-item:nth-child(2) {
+                width: 70%;
+            }
+        }
+    }
+}

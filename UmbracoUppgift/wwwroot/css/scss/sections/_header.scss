@@ -1,0 +1,47 @@
+.header {
+
+    .wrapper {
+        // border: 2px solid red;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 8px rgba(71, 71, 71, 0.3); /* Add this line for shadow */
+
+        .container {
+            display: grid;
+            // border: 2px solid blue;
+            width: 70%;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr; // Updated to include the new "Contact" column
+
+            .grid-item {
+                // border: 2px solid black;
+                padding: 10px;
+                font-size: 30px;
+                text-align: center;
+
+                &:nth-child(6) { // Adjusted for the search icon
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+            }
+
+            .logo {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .grid-item:nth-child(6) .search-icon { // Style for the search icon
+                font-size: 20px; // Adjust size as needed
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+

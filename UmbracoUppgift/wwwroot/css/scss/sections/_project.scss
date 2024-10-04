@@ -1,0 +1,38 @@
+.project-section {
+    
+    .wrapper {
+        // border: 2px solid red;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 250px;
+
+        .grid-container {
+            // border: 2px solid blue;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+
+            
+            .grid-item:first-child {
+                grid-column: span 4; 
+                text-align: start;
+                padding-left: 400px;
+                
+            }
+
+            
+            .grid-item {
+                // border: 2px solid black;
+                font-size: 30px;
+                text-align: center;
+
+                .background-image {
+                    width: 100%
+                }
+            }
+        }
+    }
+}

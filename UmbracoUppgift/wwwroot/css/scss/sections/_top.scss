@@ -1,0 +1,35 @@
+.top-bar {
+    .wrapper {
+        // border: 2px solid red;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center; /* Centers the entire content in the middle of the Y-axis */
+
+        .container {
+            display: grid;
+            // border: 2px solid blue;
+            width: 70%;
+            grid-template-columns: 1fr 1fr;
+
+            .grid-item {
+                display: flex;
+                align-items: center; /* Vertically centers the content inside each grid-item */
+                gap: 30px;
+                // border: 2px solid black;
+                justify-content: center;
+
+                &:nth-child(1) {
+                    justify-content: flex-start; /* Left-align the first item */
+                }
+
+                &:nth-child(2) {
+                    justify-content: flex-end; /* Right-align the second item */
+                }
+
+            
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+    var PageTitle = !string.IsNullOrEmpty(ViewBag.Title) ? $"{ViewBag.Title} | Onatrix - Financial Solutions for Your Business" : "Onatrix - Financial Solutions for Your Business";
+}
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel ="stylesheet" href="/css/design-palette.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <section class="top-bar bg-dark">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="grid-item">
+                        <a href="https://goo.gl/maps/example" target="_blank" class="no-icon">Klarabergsviadukten 90, 111 64 Stockholm</a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://facebook.com" target="_blank" class="no-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="no-icon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="no-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="header">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="grid-item logo">
+                        <a href="/">
+                            <img src="Images/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="grid-item bg-light">
+                        <a href="/about-page/"><h5>About</h5></a>
+                    </div>
+                    <div class="grid-item bg-light">
+                        <a href="/services-page/"><h5>Services</h5></a>
+                    </div>
+                    <div class="grid-item bg-light">
+                        <a href="#projects"><h5>Projects</h5></a>
+                    </div>
+                    <div class="grid-item bg-light">
+                        <a href="/contact.html"><h5>Contact</h5></a>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fa fa-search search-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <section class="footer-section bg-dark">
+            <div class="wrapper">
+                <div class="container">
+                    <div>© Onatrix. All Rights Reserved. Credits to Themesflat</div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+</body>

@@ -1,0 +1,30 @@
+.ceo-section  {
+
+    .wrapper {
+        // border: 2px solid red;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        
+        .grid-container {
+            // border: 2px solid blue;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 40px;
+            width: 70%;
+
+            .grid-item {
+                // border: 2px solid black;
+
+                img {
+                    margin-bottom: 10px;
+                }
+
+            }
+        }
+    }
+}    
