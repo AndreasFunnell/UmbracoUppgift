@@ -1,0 +1,137 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "mainLayout.cshtml";
+    ViewBag.Title = Model?.Value("pageTitle")?.ToString() ?? null;
+    
+}
+
+<section class="about-navigation">
+        <div class="wrapper bg-gray">
+            <img class="background-image" src="Images/AboutImage.svg">
+            <div class="container">
+                <div class="grid-item">
+                    <h2>About Us</h2>
+                </div>
+                <div class="grid-item breadcrumbs">
+                    <a href="/home.html"><h5>Home</h5></a>
+                    <div class="separator">></div>
+                    <a href="/about.html"><h5>About</h5></a>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="ceo-section">
+    <div class="wrapper">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="Images/CeoImage.svg">
+                <p>Tina Fox - Ceo & Founder at Onatrix</p>
+            </div>
+            <div class="grid-item">
+                <h5>“We have over 25 years of experience providing expert financial advice to both businesses and individuals.”</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, maxime reiciendis! Corporis porro quis iste aperiam sint provident mollitia reprehenderit rerum, corrupti blanditiis alias sed facilis architecto repudiandae ullam consectetur quos a quo rem facere saepe. Veniam, dolorum minus. Dignissimos nisi corporis quaerat maiores corrupti ipsam dolorem facere eius odit. Facere distinctio quas sit nostrum corrupti earum quam vel vero cum expedita doloremque consectetur explicabo fugit quia assumenda dignissimos eos adipisci delectus animi fugiat nemo, aperiam molestias. Ut incidunt doloremque in rerum deleniti quasi, aliquid cupiditate maiores quaerat nostrum debitis facere nam optio temporibus minima corrupti ullam placeat voluptas at minus! Qui quia animi iste ipsum dolorem quod vero placeat, dicta eveniet deserunt ea delectus corporis a eum, et quasi corrupti maxime blanditiis. Rerum, delectus. Porro omnis ducimus temporibus hic recusandae voluptatibus vero aut! Omnis accusamus culpa voluptatum? Blanditiis quis fuga, nisi quos impedit voluptatum magnam consequatur qui doloribus voluptatibus!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="review-section">
+    <div class="wrapper bg-gray">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h6>GREAT REVIEWS FOR OUR SERVICES</h6>
+                <h2>Trusted by some Biggest Names</h2>
+                <p>Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals.</p>
+                <img src="Images/RatingImage.svg">
+                <p>Kevin Gardner</p>
+                <h5>Swebank</h5>
+            </div>
+            <div class="grid-item">
+                <img class="review-image" src="Images/ReviewImage.svg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team-section">
+    <div class="wrapper">
+        <div class="container">
+            <h6>OUR EXPERTS</h6>
+            <h2>A team of professionals with years of experience</h2>
+            <div class="flex-container-3">
+                <div class="card">
+                    <img src="Images/BrandonImage.svg">
+                    <h5>Brandon Newton</h5>
+                    <p>Financial Advisor at Onatrix</p>
+                </div>
+                <div class="card">
+                    <img src="Images/BrandonImage.svg">
+                    <h5>Brandon Newton</h5>
+                    <p>Financial Advisor at Onatrix</p>
+                </div>
+                <div class="card">
+                    <img src="Images/BrandonImage.svg">
+                    <h5>Brandon Newton</h5>
+                    <p>Financial Advisor at Onatrix</p>
+                </div>
+            </div>
+            
+            <div class="flex-container-4">
+                <div class="card">
+                    <img src="Images/BrandonImage.svg">
+                    <h5>Brandon Newton</h5>
+                    <p>Financial Advisor at Onatrix</p>
+                </div>
+                <div class="card">
+                    <img src="Images/BrandonImage.svg">
+                    <h5>Brandon Newton</h5>
+                    <p>Financial Advisor at Onatrix</p>
+                </div>
+                <div class="card">
+                    <img src="Images/BrandonImage.svg">
+                    <h5>Brandon Newton</h5>
+                    <p>Financial Advisor at Onatrix</p>
+                </div>
+                <div class="card">
+                    <img src="Images/BrandonImage.svg">
+                    <h5>Brandon Newton</h5>
+                    <p>Financial Advisor at Onatrix</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="wrapper">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="background-image" src="Images/BackgroundImage3.svg">
+                <img class="glassesguy" src="Images/GlassesGuyImage.svg" alt="Glasses Guy Image">
+            </div>
+            <div class="grid-item">
+                <h2>Let us know about your next project</h2>
+                
+                <div class="icon-text">
+                    <i class="fa-light fa-location-dot"></i>
+                    <h5>Office location</h5>
+                </div>
+                <p>Klarabergsviadukten 90, 111 52 Stockholm</p>
+                
+                <div class="icon-text">
+                    <i class="fa-light fa-phone"></i>
+                    <h5>Phone number</h5>
+                </div>
+                <p>+46 8 123 456 75</p>
+
+                <div class="icon-text">
+                    <i class="fa-light fa-envelope"></i>
+                    <h5>E-mail address</h5>
+                </div>
+                <p>sales@onatrix.com</p>
+            </div>
+        </div>
+    </div>
+</section>

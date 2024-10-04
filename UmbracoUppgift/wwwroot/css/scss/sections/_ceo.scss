@@ -1,4 +1,4 @@
-.ceo-section  {
+.ceo-section {
 
     .wrapper {
         // border: 2px solid red;
@@ -9,7 +9,7 @@
         width: 100%;
         padding-top: 100px;
         padding-bottom: 100px;
-        
+
         .grid-container {
             // border: 2px solid blue;
             display: grid;
@@ -20,11 +20,14 @@
             .grid-item {
                 // border: 2px solid black;
 
+                p {
+                    line-height: 3;
+                }
+
                 img {
                     margin-bottom: 10px;
                 }
-
             }
         }
     }
-}    
+}

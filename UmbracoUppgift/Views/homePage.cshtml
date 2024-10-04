@@ -19,6 +19,12 @@
     var businessImage = Model?.Value<IPublishedContent>("projectBusinessImage")?.Url() ?? "";
     var financialImage = Model?.Value<IPublishedContent>("projectAdvisorImage")?.Url() ?? "";
     var budgetImage = Model?.Value<IPublishedContent>("projectBudgetImage")?.Url() ?? "";
+    var logoImage1 = Model?.Value<IPublishedContent>("logoImage1")?.Url() ?? "";
+    var logoImage2 = Model?.Value<IPublishedContent>("logoImage2")?.Url() ?? "";
+    var logoImage3 = Model?.Value<IPublishedContent>("logoImage3")?.Url() ?? "";
+    var logoImage4 = Model?.Value<IPublishedContent>("logoImage4")?.Url() ?? "";
+    var logoImage5 = Model?.Value<IPublishedContent>("logoImage5")?.Url() ?? "";
+    var logoImage6 = Model?.Value<IPublishedContent>("logoImage6")?.Url() ?? "";
 }
 
 <section class="hero-section">
@@ -189,12 +195,12 @@
     <section class="logo-section">
         <div class="wrapper">
             <div class="container">
-                <img class ="logo-image" src="Images/FreedomLogo.svg" alt="">
-                <img class ="logo-image" src="Images/IdentityLogo.svg" alt="">
-                <img class ="logo-image" src="Images/NaturalLogo.svg" alt="">
-                <img class ="logo-image" src="Images/SimpleafLogo.svg" alt="">
-                <img class ="logo-image" src="Images/GlobeLogo.svg" alt="">
-                <img class ="logo-image" src="Images/FossilLogo.svg" alt="">
+                <img class ="logo-image" src="@logoImage1" alt="">
+                <img class ="logo-image" src="@logoImage2" alt="">
+                <img class ="logo-image" src="@logoImage3" alt="">
+                <img class ="logo-image" src="@logoImage4" alt="">
+                <img class ="logo-image" src="@logoImage5" alt="">
+                <img class ="logo-image" src="@logoImage6" alt="">
             </div>
         </div>
     </section>
