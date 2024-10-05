@@ -4,6 +4,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="14.2.0" />
@@ -16,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\css\" />
+    <None Include="compilerconfig.json" />
   </ItemGroup>
 
   <PropertyGroup>

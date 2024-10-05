@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "wwwroot/css/scss/main.css",
+    "inputFile": "wwwroot/css/scss/main.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/scss/sections/_projects.css",
+    "inputFile": "wwwroot/css/scss/sections/_projects.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/scss/sections/_projectsnavigation.css",
+    "inputFile": "wwwroot/css/scss/sections/_projectsnavigation.scss"
+  }
+]

@@ -1,0 +1,99 @@
+.our-projects-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;  
+    gap: 20px;
+    width: 70%;
+  
+    .articles {
+      
+      .article {
+        display: flex;
+        margin-bottom: 20px;
+        border-top: 1px solid #ECECEC;
+        padding-top: 20px;
+  
+        .image {
+          flex: 1;
+          
+          img {
+            width: 100%;
+            margin-top: 10px;
+          }
+        }
+  
+        .content {
+          flex: 2;
+          padding-left: 20px;
+  
+          .date {
+            color: #9C9EA6;
+          }
+  
+          p {
+            margin-top: -5px;
+            width: 75%;
+          }
+  
+          a {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  
+    .sidebar {
+      border-left: 1px solid #ECECEC;
+      padding-left: 10px;
+
+      .tags {
+        
+        h4 {
+          margin-bottom: 10px;
+        }
+  
+        .tag-list {
+          span {
+            background: #f0f0f0;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+            border-radius: 15px;
+          }
+        }
+      }
+  
+      .support-form {
+        margin-top: 50px;
+        
+        h4 {
+          margin-bottom: 10px;
+        }
+  
+        form {
+          input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+          }
+  
+          .btn-primary {
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+  

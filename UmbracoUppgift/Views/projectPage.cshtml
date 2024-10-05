@@ -1,0 +1,138 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "mainLayout.cshtml";
+    var navigationImage = Model?.Value<IPublishedContent>("navigationImage")?.Url() ?? "";
+    var projectImage1 = Model?.Value<IPublishedContent>("projectImage1")?.Url() ?? "";
+    var projectImage2 = Model?.Value<IPublishedContent>("projectImage2")?.Url() ?? "";
+    var projectImage3 = Model?.Value<IPublishedContent>("projectImage3")?.Url() ?? "";
+    var projectImage4 = Model?.Value<IPublishedContent>("projectImage4")?.Url() ?? "";
+    var contactBackgroundImage = Model?.Value<IPublishedContent>("contactBackgroundImage")?.Url() ?? "";
+    var contactImage = Model?.Value<IPublishedContent>("contactImage")?.Url() ?? "";
+    
+}
+
+<section class="projects-navigation">
+    <div class="wrapper bg-gray">
+        <img class="background-image" src="@navigationImage">
+        <div class="container">
+            <div class="grid-item">
+                <h2>@Model.Value("navigationTitle")</h2>
+            </div>
+            <div class="grid-item breadcrumbs">
+                <a href="/home.html"><h5>Home</h5></a>
+                <div class="separator">></div>
+                <a href="/about.html"><h5>Projects</h5></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="our-projects-section">
+    <div class="container">
+        <div class="articles">
+            <div class="article">
+                <div class="image">
+                    <img src="@projectImage1" alt="Annual Report">
+                </div>
+                <div class="content">
+                    <h4>@Model.Value("projectHeadline1")</h4>
+                    <p><span class="date">@Model.Value("projectDate1")</span></p>
+                    <p>@Model.Value("projectText1")</p>
+                    <a href="#">@Model.Value("projectLink")</a>
+                </div>
+            </div>
+        <div class="article">
+            <div class="image">
+                <img src="@projectImage2" alt="Annual Report">
+            </div>
+            <div class="content">
+                <h4>@Model.Value("projectHeadline2")</h4>
+                <p><span class="date">@Model.Value("projectDate2")</span></p>
+                <p>@Model.Value("projectText2")</p>
+                <a href="#">@Model.Value("projectLink")</a>
+            </div>
+        </div>
+        <div class="article">
+            <div class="image">
+                <img src="@projectImage3" alt="Annual Report">
+            </div>
+            <div class="content">
+                <h4>@Model.Value("projectHeadline3")</h4>
+                <p><span class="date">@Model.Value("projectDate3")</span></p>
+                <p>@Model.Value("projectText3")</p>
+                <a href="#">@Model.Value("projectLink")</a>
+            </div>
+        </div>
+        <div class="article">
+            <div class="image">
+                <img src="@projectImage4" alt="Annual Report">
+            </div>
+            <div class="content">
+                <h4>@Model.Value("projectHeadline4")</h4>
+                <p><span class="date">@Model.Value("projectDate4")</span></p>
+                <p>@Model.Value("projectText4")</p>
+                <a href="#">@Model.Value("projectLink")</a>
+            </div>
+        </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="tags">
+                <h4>@Model.Value("projectTagHeadline")</h4>
+                <div class="tag-list">
+                    <span>@Model.Value("projectTag1")</span>
+                    <span>@Model.Value("projectTag2")</span>
+                    <span>@Model.Value("projectTag3")</span>
+                    <span>@Model.Value("projectTag4")</span>
+                    <span>@Model.Value("projectTag5")</span>
+                    <span>@Model.Value("projectTag6")</span>
+                    <span>@Model.Value("projectTag7")</span>
+                    <span>@Model.Value("projectTag8")</span>
+                </div>
+            </div>
+
+            <div class="support-form">
+                <h4>How can we help you?</h4>
+                <p>Online support 24/7, we are here to help you</p>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Email address" required />
+                    <a class="btn-primary">Send</a>
+                </form>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="wrapper">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="background-image" src="@contactBackgroundImage">
+                <img class="glassesguy" src="@contactImage" alt="Glasses Guy Image">
+            </div>
+            <div class="grid-item">
+                <h2>@Model.Value("contactHeadline")</h2>
+                
+                <div class="icon-text">
+                    <i class="fa-light fa-location-dot"></i>
+                    <h5>@Model.Value("contactLocationHeadline")</h5>
+                </div>
+                <p>@Model.Value("contactLocationText")</p>
+                
+                <div class="icon-text">
+                    <i class="fa-light fa-phone"></i>
+                    <h5>@Model.Value("contactPhoneNumberHeadline")</h5>
+                </div>
+                <p>@Model.Value("contactPhoneNumberText")</p>
+
+                <div class="icon-text">
+                    <i class="fa-light fa-envelope"></i>
+                    <h5>@Model.Value("contactEmailHeadline")</h5>
+                </div>
+                <p>@Model.Value("contactEmailText")</p>
+            </div>
+        </div>
+    </div>
+</section>
