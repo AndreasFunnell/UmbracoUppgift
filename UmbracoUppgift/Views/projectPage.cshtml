@@ -2,6 +2,7 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
 	Layout = "mainLayout.cshtml";
+    ViewBag.Title = Model?.Value("pageTitle")?.ToString() ?? null;
     var navigationImage = Model?.Value<IPublishedContent>("navigationImage")?.Url() ?? "";
     var projectImage1 = Model?.Value<IPublishedContent>("projectImage1")?.Url() ?? "";
     var projectImage2 = Model?.Value<IPublishedContent>("projectImage2")?.Url() ?? "";

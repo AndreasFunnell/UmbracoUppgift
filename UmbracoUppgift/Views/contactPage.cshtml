@@ -2,9 +2,17 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
 @{
 	Layout = "mainLayout.cshtml";
+    ViewBag.Title = Model?.Value("pageTitle")?.ToString() ?? null;
     var navigationImage = Model?.Value<IPublishedContent>("navigationImage")?.Url() ?? "";
     var contactBackgroundImage = Model?.Value<IPublishedContent>("contactBackgroundImage")?.Url() ?? "";
     var contactImage = Model?.Value<IPublishedContent>("contactImage")?.Url() ?? "";
+    var contactMapImage = Model?.Value<IPublishedContent>("contactMapImage")?.Url() ?? "";
+    var logoImage1 = Model?.Value<IPublishedContent>("logoImage1")?.Url() ?? "";
+    var logoImage2 = Model?.Value<IPublishedContent>("logoImage2")?.Url() ?? "";
+    var logoImage3 = Model?.Value<IPublishedContent>("logoImage3")?.Url() ?? "";
+    var logoImage4 = Model?.Value<IPublishedContent>("logoImage4")?.Url() ?? "";
+    var logoImage5 = Model?.Value<IPublishedContent>("logoImage5")?.Url() ?? "";
+    var logoImage6 = Model?.Value<IPublishedContent>("logoImage6")?.Url() ?? "";
 }
 
 <section class="contact-navigation">
@@ -31,43 +39,43 @@
                 <img class="glassesguy" src="@contactImage" alt="Glasses Guy Image">
             </div>
             <div class="grid-item">
-                <h2>Let us know about your next project</h2>
+                <h2>@Model.Value("contactHeadline")</h2>
                 
                 <div class="icon-text">
                     <i class="fa-light fa-location-dot"></i>
-                    <h5>Office location</h5>
+                    <h5>@Model.Value("contactLocationHeadline")</h5>
                 </div>
-                <p>Klarabergsviadukten 90, 111 52 Stockholm</p>
+                <p>@Model.Value("contactLocationText")</p>
                 
                 <div class="icon-text">
                     <i class="fa-light fa-phone"></i>
-                    <h5>Phone number</h5>
+                    <h5>@Model.Value("contactPhoneNumberHeadline")</h5>
                 </div>
-                <p>+46 8 123 456 75</p>
+                <p>@Model.Value("contactPhoneNumberText")</p>
 
                 <div class="icon-text">
                     <i class="fa-light fa-envelope"></i>
-                    <h5>E-mail address</h5>
+                    <h5>@Model.Value("contactEmailHeadline")</h5>
                 </div>
-                <p>sales@onatrix.com</p>
+                <p>@Model.Value("contactEmailText")</p>
             </div>
         </div>
     </div>
 </section>
 
 <section class="map-section">
-    <img class="map-image" src="Images/ContactMapImage.svg">
+    <img class="map-image" src="@contactMapImage">
 </section>
 
 <section class="logo-section">
     <div class="wrapper">
         <div class="container">
-            <img class ="logo-image" src="Images/FreedomLogo.svg" alt="">
-            <img class ="logo-image" src="Images/IdentityLogo.svg" alt="">
-            <img class ="logo-image" src="Images/NaturalLogo.svg" alt="">
-            <img class ="logo-image" src="Images/SimpleafLogo.svg" alt="">
-            <img class ="logo-image" src="Images/GlobeLogo.svg" alt="">
-            <img class ="logo-image" src="Images/FossilLogo.svg" alt="">
+            <img class ="logo-image" src="@logoImage1" alt="">
+            <img class ="logo-image" src="@logoImage2" alt="">
+            <img class ="logo-image" src="@logoImage3" alt="">
+            <img class ="logo-image" src="@logoImage4" alt="">
+            <img class ="logo-image" src="@logoImage5" alt="">
+            <img class ="logo-image" src="@logoImage6" alt="">
         </div>
     </div>
 </section>
